@@ -1,0 +1,17 @@
+.grad-blue-green {
+  background: #5afe9c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #92FE9D, #5afe9c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #92FE9D, #5afe9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.grad {
+  &.purple {
+    background: linear-gradient(to bottom, #D8D1FF, #BAAEFE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &.pink {
+    background: linear-gradient(to bottom, #FFD1D4, #F9A5B1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &.blue {
+    background: linear-gradient(to bottom, #94D6FF, #C7EBFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}

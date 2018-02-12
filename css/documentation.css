@@ -1,0 +1,6 @@
+.fat-shadow-parent:before {
+  content: '.fat-shadow-parent';
+  postion: absolute;
+  bottom: 100%; }
+
+/*# sourceMappingURL=documentation.css.map */

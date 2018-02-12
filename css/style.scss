@@ -1,0 +1,81 @@
+$red: red;
+$br: 10px;
+@import "mixins";
+@import "gradients";
+@import "documentation";
+
+.box {
+  border-radius: $br;
+  padding: $br * 2.5;
+  @include fat-shadow();
+
+}
+
+.colored {
+  div,p,h1,h2,h3,h4,h5,h6,span,em,i,strong {
+    color: #fff;
+  }
+}
+
+// Fat Shadow
+//
+// Use this class on any element to make it follow the Fat Shadow Design Pattern.
+//
+// Markup:
+// <button class="fat-shadow">Click Me</button>
+//
+// Styleguide Components.Buttons.bold
+div.fat-shadow {
+  @include fat-shadow();
+}
+
+// Fat Shadow Parent
+//
+// Use this class on any parent element to make it and it's children follow the Fat Shadow Design Pattern.
+//
+// Markup:
+// <button class="fat-shadow">Click Me</button>
+//
+// Styleguide Components.Buttons.bold
+.fat-shadow-parent {
+  border-radius: $br;
+  padding: $br * 2.5;
+
+  div,span {
+    @include fat-shadow();
+  }
+  img {
+    @include fat-shadow();
+  }
+  p,h1,h2,h3,h4,h5,h6,span,em,strong {
+    @include fat-shadow--text();
+  }
+
+  @include resetBootstrap();
+  .no-shadow {
+    box-shadow: none;
+  }
+}
+
+p,h1,h2,h3,h4,h5,h6,span,em,strong {
+  &.fat-shadow {
+    @include fat-shadow--text();
+  }
+}
+img {
+  &.fat-shadow {
+    @include fat-shadow--super();
+  }
+}
+
+// Circle
+//
+// Use this class on any element to make it a circle
+//
+// Markup:
+// <button class="fat-shadow">Click Me</button>
+//
+// Styleguide Components.Buttons.bold
+.fs-circle {
+  border-radius: 9999px !important;
+}
